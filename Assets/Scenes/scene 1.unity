@@ -446,7 +446,8 @@ PrefabInstance:
       value: RELike_level
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -7366034597972168984, guid: 61ee77537d9064345b8aa50a46296fab, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61ee77537d9064345b8aa50a46296fab, type: 3}
