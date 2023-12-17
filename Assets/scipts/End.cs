@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class End : MonoBehaviour
 {
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter(Collider collision)
     {
         if (collision.tag == "Player")
         {
