@@ -19,6 +19,7 @@ public class animTrigger : MonoBehaviour
     public GameObject Grille;
     public GameObject Light_Big;
     public GameObject Tube_Falling;
+    public GameObject Carpet_Fall;
 
 
     void Update()
@@ -39,6 +40,7 @@ public class animTrigger : MonoBehaviour
             Grille.GetComponent<Animator>().Play("Grille"); 
             Light_Big.GetComponent<Animator>().Play("Light_Big");
             Tube_Falling.GetComponent<Animator>().Play("Tube");
+            Carpet_Fall.GetComponent<Animator>().Play("Carpet_Fall");
 
         }
     }
