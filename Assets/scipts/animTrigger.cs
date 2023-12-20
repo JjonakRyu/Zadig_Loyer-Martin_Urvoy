@@ -5,6 +5,7 @@ using UnityEngine;
 public class animTrigger : MonoBehaviour
 {
     public KeyCode key1;
+
     public GameObject Poteau_Light;
     public GameObject Sol_Left_Corner;
     public GameObject Sol_Left_Suite;
