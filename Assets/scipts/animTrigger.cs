@@ -21,6 +21,29 @@ public class animTrigger : MonoBehaviour
     public GameObject Tube_Falling;
     public GameObject Carpet_Fall;
 
+    //void OnTriggerEnter(Collider other)
+    //{
+    //    if (Input.GetKeyDown(key1))
+    //    {
+    //        Sol_1.GetComponent<Animator>().Play("Sol_1");
+    //        Sol_1.GetComponent<Animator>().Play("Sol_1");
+    //        Poteau_Light.GetComponent<Animator>().Play("Pteau_Light");
+    //        Sol_Left_Corner.GetComponent<Animator>().Play("Sol_Left_Corner");
+    //        Sol_Left_Suite.GetComponent<Animator>().Play("Sol_Left_Suite");
+    //        Sol_Left_03.GetComponent<Animator>().Play("Sol_Left_03");
+    //        Sol_Left_04.GetComponent<Animator>().Play("Sol_Left_04");
+    //        Sol_Var_01.GetComponent<Animator>().Play("Sol_Var_01");
+    //        Sol_Var_02.GetComponent<Animator>().Play("Sol_Var_02");
+    //        Sol_Var_03.GetComponent<Animator>().Play("Sol_Var_03");
+    //        Sol_Var_Rotation.GetComponent<Animator>().Play("Sol_Var_Rotation");
+    //        Levier_03.GetComponent<Animator>().Play("Levier_Main");
+    //        Grille.GetComponent<Animator>().Play("Grille");
+    //        Light_Big.GetComponent<Animator>().Play("Light_Big");
+    //        Tube_Falling.GetComponent<Animator>().Play("Tube");
+    //        Carpet_Fall.GetComponent<Animator>().Play("Carpet_Fall");
+    //    }
+    //}
+
 
     void Update()
     {
@@ -37,21 +60,17 @@ public class animTrigger : MonoBehaviour
             Sol_Var_03.GetComponent<Animator>().Play("Sol_Var_03");
             Sol_Var_Rotation.GetComponent<Animator>().Play("Sol_Var_Rotation");
             Levier_03.GetComponent<Animator>().Play("Levier_Main");
-            Grille.GetComponent<Animator>().Play("Grille"); 
+            Grille.GetComponent<Animator>().Play("Grille");
             Light_Big.GetComponent<Animator>().Play("Light_Big");
             Tube_Falling.GetComponent<Animator>().Play("Tube");
             Carpet_Fall.GetComponent<Animator>().Play("Carpet_Fall");
 
+
+
         }
     }
 
-    //void OnTriggerEnter(Collider other)
-    //{
-    //    if (Input.GetKeyDown(key1))
-    //    {
-    //        Sol_1.GetComponent<Animator>().Play("Sol_1");
-    //    }
-    //}
+
 
     //void OnTriggerEnter(Collider other)
     //{
