@@ -21,6 +21,7 @@ public class animTrigger : MonoBehaviour
     public GameObject Light_Big;
     public GameObject Tube_Falling;
     public GameObject Carpet_Fall;
+    public GameObject Light_Spot_Anim;
 
     //void OnTriggerEnter(Collider other)
     //{
@@ -65,7 +66,7 @@ public class animTrigger : MonoBehaviour
             Light_Big.GetComponent<Animator>().Play("Light_Big");
             Tube_Falling.GetComponent<Animator>().Play("Tube");
             Carpet_Fall.GetComponent<Animator>().Play("Carpet_Fall");
-
+            Light_Spot_Anim.GetComponent<Animator>().Play("Light_Spot_Anim");
 
 
         }

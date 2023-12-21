@@ -50,5 +50,30 @@ public class PlayerTankMode : MonoBehaviour
         _playerVelocity.y += _gravityValue * Time.deltaTime;
         // Translation du joueur en fonction de la gravité sur l'axe Y du monde (Unity est Y-UP)
         _characterController.Move(_playerVelocity * Time.deltaTime);
+
+        if ((Input.GetKey(KeyCode.UpArrow)) || (Input.GetKey(KeyCode.W)))
+        {
+            _playerVisual.GetComponent<Animator>().SetTrigger("Forward");
+        }
+        else if ((Input.GetKey(KeyCode.LeftArrow)) || (Input.GetKey(KeyCode.A)))
+        {
+            _playerVisual.GetComponent<Animator>().SetTrigger("Left");
+        }
+        else if ((Input.GetKey(KeyCode.RightArrow)) || (Input.GetKey(KeyCode.D)))
+        {
+            _playerVisual.GetComponent<Animator>().SetTrigger("Right");
+        }
+        else if ((Input.GetKey(KeyCode.DownArrow)) || (Input.GetKey(KeyCode.S)))
+        {
+            _playerVisual.GetComponent<Animator>().SetTrigger("Backward");
+        }
+        else
+        {
+            _playerVisual.GetComponent<Animator>().SetTrigger("Idle");
+            _playerVisual.GetComponent<Animator>().ResetTrigger("Forward");
+            _playerVisual.GetComponent<Animator>().ResetTrigger("Backward");
+            _playerVisual.GetComponent<Animator>().ResetTrigger("Right");
+            _playerVisual.GetComponent<Animator>().ResetTrigger("Left");
+        }
     }
 }
